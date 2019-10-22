@@ -27,6 +27,7 @@ app.get('/', function (req, res) {
     '/yo/Dr.Rogers <br>' +
     '/fortune <br>' +
     '/fancy/?first=Denise&last=Case <br>' +
+    '/connor <br>' +
     '<br> <br>' +
     'Fork the source code from <a href="https://github.com/denisecase/node-express-app">https://github.com/denisecase/node-express-app</a>'
   )
@@ -36,6 +37,10 @@ app.get('/', function (req, res) {
 // respond with text
 app.get('/hello', (req, res) => {
   res.send('Hello World!')
+})
+
+app.get('/connor', (req, res) => {
+  res.send("This is Connor's page!!")
 })
 
 // or respond with html
